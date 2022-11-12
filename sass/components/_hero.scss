@@ -45,9 +45,8 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   transition: background-color 250ms var(--timing-function);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--hero-button-active);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-button-active);
+  }
 }

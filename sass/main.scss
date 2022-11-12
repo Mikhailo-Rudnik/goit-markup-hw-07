@@ -1,7 +1,8 @@
 @import './utils/variables';
 @import './base/reset';
-@import './utils/container';
+@import './base/container';
 @import './utils/hidden';
+@import './utils/current';
 
 @import './components/header';
 @import './components/hero';

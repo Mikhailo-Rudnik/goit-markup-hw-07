@@ -39,20 +39,18 @@
   align-items: center;
   justify-content: center;
   transition: fill 250ms var(--timing-function);
-}
-
-.modal-close:hover {
-  fill: var(--acctnt-color);
+  &:hover {
+    fill: var(--acctnt-color);
+  }
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleX(0);
+  & .modal {
+    transform: translate(-50%, -50%) scaleX(0);
+  }
 }
 
 .modal-title {
@@ -94,6 +92,9 @@
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms var(--timing-function);
+  .modal-input:focus + & {
+    fill: var(--acctnt-color);
+  }
 }
 
 .modal-input {
@@ -105,15 +106,9 @@
   outline: transparent;
   cursor: pointer;
   transition: border-color 250ms var(--timing-function);
-}
-
-.modal-input:focus,
-.modal-comment:focus {
-  border-color: var(--acctnt-color);
-}
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--acctnt-color);
+  &:focus {
+    border-color: var(--acctnt-color);
+  }
 }
 
 .modal-field-textarea {
@@ -130,14 +125,15 @@
   resize: none;
   cursor: pointer;
   transition: border-color 250ms var(--timing-function);
-}
-
-.modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
-  color: var(--placeholder-color);
+  &:focus {
+    border-color: var(--acctnt-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+  }
 }
 
 .checkbox-text {
@@ -161,16 +157,14 @@
   fill: transparent;
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
-}
-
-.checkbox-input:checked + .checkbox-text span {
-  background-color: var(--acctnt-color);
-  fill: var(--hero-studio-footer-text-color);
-  border-color: transparent;
-}
-
-.checkbox-input:focus + .checkbox-text span {
-  border-color: var(--acctnt-color);
+  .checkbox-input:checked + & {
+    background-color: var(--acctnt-color);
+    fill: var(--hero-studio-footer-text-color);
+    border-color: transparent;
+  }
+  .checkbox-input:focus + & {
+    border-color: var(--acctnt-color);
+  }
 }
 
 .contract {

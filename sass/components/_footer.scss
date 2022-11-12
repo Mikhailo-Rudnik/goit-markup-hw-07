@@ -34,6 +34,10 @@
   color: var(--hero-studio-footer-text-color);
   line-height: 1.71;
   transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--acctnt-color);
+  }
 }
 
 .mail-address,
@@ -43,15 +47,10 @@
   color: var(--footer-contacts-color);
   line-height: 1.71;
   transition: color 250ms var(--timing-function);
-}
-
-.google:hover,
-.google:focus,
-.mail-address:hover,
-.mail-address:focus,
-.tel-address:hover,
-.tel-address:focus {
-  color: var(--acctnt-color);
+  &:hover,
+  &:focus {
+    color: var(--acctnt-color);
+  }
 }
 
 .subscribe-wrap {
@@ -88,15 +87,14 @@
   background-color: var(--bcg-soc-footer);
   color: var(--hero-studio-footer-text-color);
   transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--acctnt-color);
+  }
 }
 
 .footer-soc-icon {
   fill: currentColor;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--acctnt-color);
 }
 
 .send-wrap {

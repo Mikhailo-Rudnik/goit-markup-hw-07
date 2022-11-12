@@ -94,6 +94,10 @@ button {
   overflow: hidden;
 }
 
+.current {
+  color: var(--acctnt-color);
+}
+
 .header-line {
   display: flex;
   align-items: center;
@@ -135,7 +139,6 @@ button {
   transition: color 250ms var(--timing-function);
   position: relative;
 }
-
 .nav-link.current::after {
   content: "";
   position: absolute;
@@ -146,24 +149,16 @@ button {
   background-color: var(--acctnt-color);
   border-radius: 2px;
 }
+.nav-link:hover, .nav-link:focus {
+  color: var(--acctnt-color);
+}
 
 .contacts {
   display: flex;
   margin-left: auto;
 }
-
 .contacts .item:not(:last-child) {
   margin-right: 50px;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.current,
-.mail:hover,
-.mail:focus,
-.tel:hover,
-.tel:focus {
-  color: var(--acctnt-color);
 }
 
 .mail,
@@ -177,6 +172,11 @@ button {
   display: flex;
   align-items: center;
   transition: color 250ms var(--timing-function);
+}
+.mail:hover, .mail:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--acctnt-color);
 }
 
 .mail-icon {
@@ -232,9 +232,7 @@ button {
   letter-spacing: 0.06em;
   transition: background-color 250ms var(--timing-function);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--hero-button-active);
 }
 
@@ -359,15 +357,13 @@ button {
   color: var(--soc-color);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
+.team-soc-link:hover, .team-soc-link:focus {
+  background-color: var(--acctnt-color);
+  color: var(--hero-studio-footer-text-color);
+}
 
 .team-soc-icon {
   fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--acctnt-color);
-  color: var(--hero-studio-footer-text-color);
 }
 
 .clients-list {
@@ -391,14 +387,12 @@ button {
   color: var(--soc-color);
   transition: color 250ms var(--timing-function);
 }
+.clients-link:hover, .clients-link:focus {
+  color: var(--acctnt-color);
+}
 
 .clients-icon {
   fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--acctnt-color);
 }
 
 .footer {
@@ -435,6 +429,9 @@ button {
   line-height: 1.71;
   transition: color 250ms var(--timing-function);
 }
+.google:hover, .google:focus {
+  color: var(--acctnt-color);
+}
 
 .mail-address,
 .tel-address {
@@ -443,11 +440,7 @@ button {
   line-height: 1.71;
   transition: color 250ms var(--timing-function);
 }
-
-.google:hover,
-.google:focus,
-.mail-address:hover,
-.mail-address:focus,
+.mail-address:hover, .mail-address:focus,
 .tel-address:hover,
 .tel-address:focus {
   color: var(--acctnt-color);
@@ -488,14 +481,12 @@ button {
   color: var(--hero-studio-footer-text-color);
   transition: background-color 250ms var(--timing-function);
 }
+.footer-soc-link:hover, .footer-soc-link:focus {
+  background-color: var(--acctnt-color);
+}
 
 .footer-soc-icon {
   fill: currentColor;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--acctnt-color);
 }
 
 .send-wrap {
@@ -557,10 +548,7 @@ button {
   letter-spacing: inherit;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
-
-.button.current,
-.button:hover,
-.button:focus {
+.button.current, .button:hover, .button:focus {
   background-color: var(--acctnt-color);
   color: var(--hero-studio-footer-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -580,9 +568,7 @@ button {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
 }
-
-.gallery-link:hover,
-.gallery-link:focus {
+.gallery-link:hover, .gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -604,9 +590,7 @@ button {
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
 }
-
-.gallery-link:hover .gallery-top-text,
-.gallery-link:focus .gallery-top-text {
+.gallery-link:hover .gallery-top-text, .gallery-link:focus .gallery-top-text {
   transform: translateY(0);
 }
 
@@ -672,7 +656,6 @@ button {
   justify-content: center;
   transition: fill 250ms var(--timing-function);
 }
-
 .modal-close:hover {
   fill: var(--acctnt-color);
 }
@@ -682,7 +665,6 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
-
 .is-hidden .modal {
   transform: translate(-50%, -50%) scaleX(0);
 }
@@ -723,6 +705,9 @@ button {
   transform: translateY(-50%);
   transition: fill 250ms var(--timing-function);
 }
+.modal-input:focus + .modal-input-icon {
+  fill: var(--acctnt-color);
+}
 
 .modal-input {
   width: 100%;
@@ -734,14 +719,8 @@ button {
   cursor: pointer;
   transition: border-color 250ms var(--timing-function);
 }
-
-.modal-input:focus,
-.modal-comment:focus {
+.modal-input:focus {
   border-color: var(--acctnt-color);
-}
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--acctnt-color);
 }
 
 .modal-field-textarea {
@@ -759,21 +738,21 @@ button {
   cursor: pointer;
   transition: border-color 250ms var(--timing-function);
 }
-
+.modal-comment:focus {
+  border-color: var(--acctnt-color);
+}
 .modal-comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
 }
-
 .modal-comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
 }
-
 .modal-comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
@@ -802,13 +781,11 @@ button {
   fill: transparent;
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
-
 .checkbox-input:checked + .checkbox-text span {
   background-color: var(--acctnt-color);
   fill: var(--hero-studio-footer-text-color);
   border-color: transparent;
 }
-
 .checkbox-input:focus + .checkbox-text span {
   border-color: var(--acctnt-color);
 }
