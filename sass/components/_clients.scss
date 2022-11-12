@@ -1,0 +1,29 @@
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-item {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--soc-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--acctnt-color);
+}

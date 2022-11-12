@@ -1,0 +1,139 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--hero-bcg-color-footer);
+}
+
+.footer-cotainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-studiofooter {
+  color: var(--hero-studio-footer-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.google {
+  display: inline-block;
+
+  color: var(--hero-studio-footer-text-color);
+  line-height: 1.71;
+  transition: color 250ms var(--timing-function);
+}
+
+.mail-address,
+.tel-address {
+  display: inline-block;
+
+  color: var(--footer-contacts-color);
+  line-height: 1.71;
+  transition: color 250ms var(--timing-function);
+}
+
+.google:hover,
+.google:focus,
+.mail-address:hover,
+.mail-address:focus,
+.tel-address:hover,
+.tel-address:focus {
+  color: var(--acctnt-color);
+}
+
+.subscribe-wrap {
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+.subscribe {
+  color: var(--hero-studio-footer-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bcg-soc-footer);
+  color: var(--hero-studio-footer-text-color);
+  transition: background-color 250ms var(--timing-function);
+}
+
+.footer-soc-icon {
+  fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--acctnt-color);
+}
+
+.send-wrap {
+  display: flex;
+}
+
+.input-footer {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid var(--border-input-footer);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+}
+
+.button-subscribe {
+  display: flex;
+  padding: 10px 32px;
+
+  background-color: var(--acctnt-color);
+  color: var(--hero-studio-footer-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.send-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}

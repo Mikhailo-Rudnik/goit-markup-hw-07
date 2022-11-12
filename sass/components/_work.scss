@@ -1,0 +1,37 @@
+.work {
+  padding-top: 0;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
+.work-item {
+  position: relative;
+}
+
+.work-list-text {
+  position: absolute;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+  color: var(--hero-studio-footer-text-color);
+  background-color: var(--work-bcg-text);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
