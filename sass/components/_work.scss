@@ -2,25 +2,16 @@
   padding-top: 0;
 }
 
-.title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.work-item {
+.work__item {
   position: relative;
 }
 
-.work-list-text {
+.work__text {
   position: absolute;
   bottom: 0;
 

@@ -1,9 +1,9 @@
-.header-line {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.logo-link__web {
   color: var(--acctnt-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -11,7 +11,7 @@
   line-height: 1.19;
 }
 
-.logo-studioheader {
+.logo-link__studio {
   color: var(--logo-studio-header-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -19,16 +19,16 @@
   line-height: 1.19;
 }
 
-.nav-site {
+.header__navigation {
   margin-left: 93px;
 }
 
-.nav-list {
+.navigation__menu {
   display: flex;
   gap: 50px;
 }
 
-.nav-link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -57,16 +57,15 @@
   }
 }
 
-.contacts {
+.header__contacts {
   display: flex;
   margin-left: auto;
-  & .item:not(:last-child) {
+  & .contacts__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.mail,
-.tel {
+.contacts__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -83,12 +82,7 @@
   }
 }
 
-.mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.tel-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }

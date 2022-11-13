@@ -1,9 +1,9 @@
-.features-list {
+.features__list {
   display: flex;
   gap: 30px;
 }
 
-.features-box {
+.features__wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   background-color: var(--team-bcg-color);
 }
 
-.features-title {
+.features__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -23,7 +23,7 @@
   text-transform: uppercase;
 }
 
-.features-text {
+.features__text {
   color: var(--contacts-features-text-color);
   line-height: 1.71;
 }
